@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador Tecnoacademia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo-container">
+        <!-- Add your logo here -->
+        <img src="logoTai.png" alt="Project Logo" class="logo" width="500">
+    </div>
+    <h1>Temporizador Tecnoacademia 2024</h1>
+    <div class="timer-display">
+        <span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <div class="controls">
+        <input type="number" id="timeInput" min="1" max="60" placeholder="Enter minutes">
+        <button id="startBtn">Start</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+</div>
+<div id="alertBox" class="alert">
+    <p>Time's Up!</p>
+</div>
+<audio id="tickSound" src="clock.mp3" preload="auto"></audio>
+<audio id="alarmSound" src="Final.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
